@@ -25,8 +25,8 @@ import (
 const (
 	userBaseName            = "User"
 	adminBaseName           = "Admin"
-	defaultHostnameTemplate = "{{.Prefix}}{{.Index}}"
-	defaultCNTemplate       = "{{.Hostname}}.{{.Domain}}"
+	defaultHostnameTemplate = "{{-Prefix}}{{-Index}}"
+	defaultCNTemplate       = "{{-Hostname}}-{{-Domain}}"
 )
 
 type HostnameData struct {
